@@ -1,85 +1,98 @@
-# FILSCAP-MEMBERSHIP-SYSTEM1
+# FILSCAP Membership System
 
-Prerequisites
+A web-based membership management system developed using Spring Boot and MySQL.
 
-Before running the system, ensure that the following are installed:
+## Features
 
-Java Development Kit (JDK 17 or higher)
-Apache Maven
-MySQL Database Server
-A web browser (Google Chrome, Microsoft Edge, or Mozilla Firefox)
-Step 1: Open the Project
-Launch your preferred IDE (e.g., IntelliJ IDEA, Eclipse, or VS Code).
+* User Registration
+* User Login
+* Membership Management
+* Document Upload
+* Emergency Contact Management
+* Membership Approval Workflow
+* Admin Dashboard
+* User Dashboard
 
-Open the project folder containing the following structure:
-membershipsystem/
-├── src/
-├── target/
-├── pom.xml
-└── application.properties
+## Technologies Used
 
-Step 2: Configure the Database
-Open the application.properties file located in:
+* Java
+* Spring Boot
+* Spring Data JPA
+* MySQL
+* HTML/CSS
+* Maven
+
+## Requirements
+
+* JDK 17+
+* MySQL Server
+* Maven
+
+## Database Setup
+
+1. Create a database named:
+
+```sql
+CREATE DATABASE membershipsystem;
+```
+
+2. Import the provided `membershipsystem.sql` file.
+
+## Configure Database
+
+Edit:
+
+```text
 src/main/resources/application.properties
-Verify the database configuration:
+```
+
+Update:
+
+```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/new_membershipsystem
 spring.datasource.username=root
 spring.datasource.password=your_password
-Ensure that the MySQL database is running.
-Step 3: Build the Project
+```
 
-Open a terminal in the project root directory and run:
+## Running the Application
 
-mvn clean install
+Using Maven:
 
-Wait until Maven successfully builds the project.
-
-Step 4: Run the Application
-Using an IDE
-Navigate to:
-src/main/java/com/example/com.example.membershipsystem/Main.java
-Right-click Main.java.
-Select Run Main.java.
-Using Terminal
-
-Run:
-
+```bash
 mvn spring-boot:run
-Step 5: Access the System
+```
 
-Once the application starts successfully, open a web browser and enter:
+Or run:
 
+```text
+src/main/java/com/example/membershipsystem/Main.java
+```
+
+## Access the System
+
+Home Page:
+
+```text
 http://localhost:8080
+```
 
-You will be redirected to the Home Page.
+Login Page:
 
-Available Pages
-Home Page
-http://localhost:8080
-Login Page
+```text
 http://localhost:8080/login
-Registration Page
+```
+
+Register Page:
+
+```text
 http://localhost:8080/register
-Admin Dashboard
+```
 
-Accessible after administrator login.
+## Developers
 
-User Dashboard
-
-Accessible after member login.
-
-System Features
-User Registration
-User Login and Authentication
-Member Profile Management
-Membership Category Management
-Emergency Contact Management
-Document Upload and Management
-Membership Approval Processing
-Administrative Dashboard
-User Dashboard
-Logout
-
-To end the session, click the Logout button from the dashboard.
-
-The system will redirect the user back to the Login Page.
+* Mariz Casador
+* Nikki Ayala
+* Jacene Mae Depositario
+* Rachelle Ann Gomez
+* Joshua Paul Ramos
+* Shaneill Rosheane Sevilla
