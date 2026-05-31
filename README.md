@@ -33,10 +33,10 @@ A web-based membership management system developed using Spring Boot and MySQL.
 1. Create a database named:
 
 ```sql
-CREATE DATABASE membershipsystem;
+CREATE DATABASE new_membershipsystem;
 ```
 
-2. Import the provided `membershipsystem.sql` file.
+2. Import the provided `new_membershipsystem.sql` file.
 
 ## Configure Database
 
